@@ -6,19 +6,18 @@ def isNumPrime(num):
             break
     return isPrime
 
-def primeNumber(n):
-    countPrimes = 0
-    numbers = 1
-    while countPrimes < n + 1:
-        for i in range(numbers):
-            isNumPrime(i)
-            if isNumPrime(i):
-                countPrimes += 1
-        numbers += 1
-    return countPrimes
+def primeNumber(nPrime):
+    n = 2
+    while nPrime > 0:
+        isNumPrime(n)
+        if isNumPrime(n):
+            nPrime -= 1
+            n += 1
+        else:
+            n += 1
+    return n
+    
      
-
-
-print(primeNumber(6))
+print(primeNumber(5))
 
 
