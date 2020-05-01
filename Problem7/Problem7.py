@@ -12,12 +12,9 @@ def primeNumber(nPrime):
         isNumPrime(n)
         if isNumPrime(n):
             nPrime -= 1
-            n += 1
-        else:
-            n += 1
-    return n
+            prime = n
+        n += 1
+    return prime
     
      
-print(primeNumber(5))
-
-
+print(primeNumber(10001))
